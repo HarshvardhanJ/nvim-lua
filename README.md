@@ -2,6 +2,6 @@
 
 Requirements:
 
-```pacman -S ripgrep```
+```pacman -S ripgrep lua-language-server```
 
 ```:PackerSync```
