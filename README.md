@@ -3,4 +3,5 @@
 Requirements:
 
 ```pacman -S ripgrep```
+
 ```:PackerSync```
