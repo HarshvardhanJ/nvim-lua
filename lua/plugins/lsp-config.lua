@@ -16,16 +16,14 @@ return {
         lspconfig.cssls.setup({ capabilities = capabilities })
         lspconfig.rust_analyzer.setup({ capabilities = capabilities })
         lspconfig.clangd.setup({ capabilities = capabilities })
-        lspconfig.pylsp.setup({
+        lspconfig.pyright.setup({
             on_attach = on_attach,
             capabilities = capabilities,
             settings = {
-                pylsp = {
-                    plugins = {
-                        jedi = { environment = which_python() },
-                    }
-                }
-            }
+                python = {
+                    pythonPath = which_python(),
+                },
+            },
         })
 
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
