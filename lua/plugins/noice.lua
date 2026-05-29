@@ -14,6 +14,11 @@ return {
             long_message_to_split = true,
         },
 
+        lsp = {
+            progress = {
+                enabled = false,
+            },
+        },
         notify = {
             enabled = true,
             view = "notify",
